@@ -12,7 +12,7 @@ DRONE_CONTENT = []
 
 # SSH into Drone
 def ssh_drone():
-    HOST = "unix.ucsc.edu"
+    HOST = ""
     USER = ""
     PASS = ""
     PORT = 22
