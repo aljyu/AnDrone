@@ -17,8 +17,7 @@
         <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
         <link href ="style.css" rel="stylesheet">
     </head>
-
-
+    
     <body>
     <div class="container">
         <h1>AnDrone Interface</h1>
@@ -29,31 +28,27 @@
             <tbody>
                 <tr><td>Device Identifier</td><td>Choose Action</td></tr>
                 <tr><td></td><td>
-
                     <div class="btn-group">
-                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
-                            Select status
-                            <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu" role="menu"> 
-                        <li><a role="menuitem">Complete</a></li>
-                        <li><a role="menuitem">In Progress</a></li>
-                        <li><a role="menuitem">Queued</a></li>
-                        </ul>
-                    </div>
-
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" href="#" id="dropdownMenu1">
+                        Select status
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1"> 
+                        <li><a href="#" class="" datavalue=1>Complete</a></li>
+                        <li><a href="#">In Progress</a></li>
+                        <li><a href="#">Queued</a></li>
+                    </ul></div>
                 </td></tr>
             </tbody>
          </table>
-
     </div>
-
+    
     <script>
-        $('.dropdown-menu a li').click(function(){
-            var text = $(this).text();
-            $(this).parents('.btn-group').find('.dropdown-toggle').html(text + ' <span class="caret"></span>');
-        });
+    $(".dropdown-menu li a").click(function(){
+          var text = $(this).text();
+          $(this).parents('.btn-group').find('.dropdown-toggle').html(text + ' <span class="caret"></span>');
+    });
     </script>
-
+    
     </body>
 </html>
